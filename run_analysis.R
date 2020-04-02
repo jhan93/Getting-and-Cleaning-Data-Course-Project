@@ -39,7 +39,7 @@ mean_std <- (combine %>% select(subject, activity, contains('mean()'), contains(
 
 ## 3. Uses Descriptive Activity names to name the activities in the data set
 ## Already joined the activity information at the top after merging the test and training
-## See line 31
+## See line 30
 
 ## 4. Used the variable names that were already provided from the features.txt file
 
