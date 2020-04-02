@@ -31,7 +31,6 @@ combine <- merge(x = combine, y = activity_label, by = "label", all.x = TRUE)
 
 ## 2. Extracts only the measurements on the mean and standard deviation for each measurement ##
 library(dplyr)
-str(combine)
 
 ##Remove duplicated column names - didn't matter since the mean and std column names were not affected.
 combine <- combine[ , !duplicated(colnames(combine))]
@@ -46,6 +45,4 @@ mean_std <- (combine %>% select(subject, activity, contains('mean()'), contains(
 ## 5. Summarise_each
 ## From the data set in step 4 (mean_std) create a second independent tidy data set with the average
 ## of each variable for each activity and each subject
-unique(mean_std$activity)
-unique(mean_std$subject)
 final <- mean_std %>% group_by(subject, activity) %>% summarise_each(funs(mean))
