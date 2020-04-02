@@ -8,8 +8,7 @@ I removed duplicated columns as I was trying to use the "contains" feature in th
 Once that cleared, I selected the calculations that had mean() or std() in the name.
 For the last question, I used the group_by and summarise_each to find the mean of each respective column
 
-###########################################################
-Context information for the data provided from the class:
+#Context information for the data provided from the class:
 
 
 ==================================================================
@@ -85,7 +84,7 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 
 
-####Features
+#Features
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
 3 tBodyAcc-mean()-Z
@@ -647,8 +646,3 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 559 angle(X,gravityMean)
 560 angle(Y,gravityMean)
 561 angle(Z,gravityMean)
-
-
-
-
-
